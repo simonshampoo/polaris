@@ -21,6 +21,7 @@
 package node
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/rs/zerolog/log"
@@ -45,6 +46,8 @@ type runner struct {
 func NewRunner(blocktime time.Duration) Runner {
 	// Setup RPC
 	rpcService := NewRPCService()
+
+	fmt.Println("Hello Hiii im in NewRunner")
 
 	// Setup Mempool
 	mempool := NewMempool()
