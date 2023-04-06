@@ -47,8 +47,7 @@ func NewRunner(blocktime time.Duration) Runner {
 	// Setup RPC
 	rpcService := NewRPCService()
 
-	fmt.Println("Hello Hiii im in NewRunner")
-
+  fmt.Println("This is the starting point of playground")
 	// Setup Mempool
 	mempool := NewMempool()
 	return &runner{
